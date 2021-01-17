@@ -5,7 +5,7 @@ There are two scripts, PlayThenWork.bat and helper.bat. PlayThenWork.bat is the 
 
 Pre-Requists:
 VMware Workstatation and VMware Player installed
-The default program to open .vmx files should be VMWare Player, NOT workstation
+The default program to open .vmx files should be VMware Player, NOT workstation
 
 How To:
 There are two scripts, PlayThenWork.bat and helper.bat
