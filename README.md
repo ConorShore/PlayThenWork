@@ -10,7 +10,7 @@ The default program to open .vmx files should be VMWare Player, NOT workstation
 How To:
 There are two scripts, PlayThenWork.bat and helper.bat
 
-Place both files in the directory of the VM you want to start.
+Place both .bat files in the directory of the VM you want to start.
 Open the PlayThenWork.bat and edit the VMX_PATH and VMX_NAME so that it matches the VM you want to start
 If you have a custom install location for the VMware Workstation EXE files, you should also change VM_WORKSTATION_DIR
 
