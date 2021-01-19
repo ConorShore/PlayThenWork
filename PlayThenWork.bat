@@ -1,9 +1,35 @@
 @echo off
 
+:: All variables should have no space between variable name, the =  and the value
+:: For example VMX_PATH = C:\VMs\ WOULD NOT WORK but VMX_PATH=C:\VMs\ will
+:: Use backslashes in file paths
+
+:: VMX_PATH is the folder containing the .vmx
 set VMX_PATH=E:\Virtual Machines\Win10\
+
+:: VMX_NAME is the VMX file, including extension
 set VMX_NAME=Win10.vmx
+
+:: This is the delay between opening player and starting workstation
+:: If you're having problem or have a slow PC, try increasing this
 set PLAYER_DELAY=20
-set VM_WORKSTATION_DIR=C:\Program Files (x86)\VMware\VMware Workstation\
+
+::Variable sanitation
+
+if NOT "%VMX_PATH:~1,1%"==":" (
+	echo Problem with VMX_PATH
+	echo Ensure there are no spaces in variable assignment
+	echo Ensure you are using full file paths
+	pause
+	exit
+)
+
+if NOT "%VMX_NAME:~-4%"==".vmx" (
+	echo Problem with VMX_NAME
+	echo Missing variable or missing extension
+	pause
+	exit
+)
 
 echo This script uses VM player to start the VM, and then VM workstation to control it
 echo Make sure to set VMware Player as the default program for .vmx files
