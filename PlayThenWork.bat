@@ -10,6 +10,9 @@ set VMX_PATH=E:\Virtual Machines\Win10\
 :: VMX_NAME is the VMX file, including extension
 set VMX_NAME=Win10.vmx
 
+:: Path to folder which contains VMware workstation
+set VM_WORKSTATION_DIR=C:\Program Files (x86)\VMware\VMware Workstation\
+
 :: This is the delay between opening player and starting workstation
 :: If you're having problem or have a slow PC, try increasing this
 set PLAYER_DELAY=20
