@@ -27,6 +27,28 @@ if NOT "%VMX_PATH:~1,1%"==":" (
 	exit
 )
 
+if NOT "%VMX_PATH:~-1%"=="\" (
+	echo Problem with VMX_PATH
+	echo Missing \ at end of path
+	pause
+	exit
+)
+
+if NOT "%VM_WORKSTATION_DIR:~1,1%"==":" (
+	echo Problem with VM_WORKSTATION_DIR
+	echo Ensure there are no spaces in variable assignment
+	echo Ensure you are using full file paths
+	pause
+	exit
+)
+
+if NOT "%VM_WORKSTATION_DIR:~-1%"=="\" (
+	echo Problem with VM_WORKSTATION_DIR
+	echo Missing \ at end of path
+	pause
+	exit
+)
+
 if NOT "%VMX_NAME:~-4%"==".vmx" (
 	echo Problem with VMX_NAME
 	echo Missing variable or missing extension
