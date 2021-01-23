@@ -71,6 +71,8 @@ echo Single click on the name of the VM you're trying to open once on Workstatio
 echo Don't worry if you get an error, just click ok and try again
 echo This will open the take ownership menu, don't click anything yet
 echo Press enter on this command prompt when youve got there
+echo
+echo IF RESUMEING AND NOT STARTING A VM WAIT FOR PLAYER TO RESTORE VM STATE BEFORE CONTINUING
 cd /d "%VM_WORKSTATION_DIR%"
 start vmware.exe
 pause
