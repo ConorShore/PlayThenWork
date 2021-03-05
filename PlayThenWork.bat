@@ -61,7 +61,7 @@ echo Make sure to set VMware Player as the default program for .vmx files
 echo VM full path = %VMX_PATH%%VMX_NAME%
 
 echo Starting VM %VMX_NAME% in VMware Player
-start helper.bat "%VMX_PATH%%VMX_NAME%"
+start "%VMX_PATH%helper.bat" "%VMX_PATH%%VMX_NAME%"
 
 echo Waiting %PLAYER_DELAY% seconds for Player to start
 timeout /t %PLAYER_DELAY% /nobreak
